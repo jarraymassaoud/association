@@ -23,3 +23,4 @@ const Menu = () => {
 };
 
 export default Menu;
+//how to create react-responsive-carousel?

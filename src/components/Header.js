@@ -1,16 +1,9 @@
 import React, { Component } from "react";
-import {
-  NavbarBrand,
-  Nav,
-  NavbarToggler,
-  Collapse,
-  Navbar,
-  NavItem,
-} from "reactstrap";
+import { Nav, Collapse, Navbar, NavItem } from "reactstrap";
 import { NavLink } from "react-router-dom";
-
-import { Jumbotron } from "react-bootstrap";
-import Menu from "./Menu";
+import logo1 from "../assets/images/atas.png";
+import drapeau from "../assets/images/Flag_of_Tunisia.gif";
+import logominster from "../assets/images/logo-minister.png";
 
 export class Header extends Component {
   constructor(props) {
@@ -35,7 +28,7 @@ export class Header extends Component {
           <div className="row">
             <div className="col-4">
               <img
-                src="assets/images/atas.png"
+                src={logo1}
                 height="30"
                 width="31"
                 alt="ATAS Mednine"
@@ -45,20 +38,12 @@ export class Header extends Component {
             </div>
             <div className="col-4">
               <div className="col-flag">
-                <img
-                  src="/assets/images/Flag_of_Tunisia.gif"
-                  alt=""
-                  width="40%"
-                ></img>
+                <img src={drapeau} alt="" width="40%"></img>
               </div>
             </div>
 
             <div className="col-2 offset-2">
-              <img
-                src="/assets/images/logo-minister.png"
-                alt=""
-                width="100%"
-              ></img>
+              <img src={logominster} alt="" width="100%"></img>
             </div>
           </div>
         </div>
