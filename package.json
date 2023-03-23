@@ -12,6 +12,7 @@
     "flat-carousel": "^0.0.1",
     "font-awesome": "^4.7.0",
     "fs": "^0.0.1-security",
+    "gh-pages": "^5.0.0",
     "react": "^18.0.0",
     "react-bootstrap": "^1.6.6",
     "react-image-gallery": "^1.2.11",
@@ -26,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "redeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,5 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://github.com/jarraymassaoud/societ-_atas"
 }
