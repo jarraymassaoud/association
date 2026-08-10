@@ -1,42 +1,74 @@
+/* --- Global Reset & Flexbox Root --- */
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/* إجبار الصفحة والـ Wrapper على أخذ الارتفاع الكامل */
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1 0 auto; /* هذا هو السطر اللي يدفع الـ Footer للوطا تلقائياً */
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
+}
+/* الحاوية المباشرة تحت root تعمل كـ Flexbox عمودي */
+#root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* --- Main Content (يدفع Footer للقاع دائماً) --- */
+.main-content {
+  flex: 1 0 auto; /* يتمدد لملء كل الفراغ العمودي المتبقي */
+  width: 100%;
+}
+
+/* --- Header & Navbar --- */
 .row-header {
-  margin: 0px auto;
-  padding: 0px auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .row-content {
-  margin: 0px auto;
-  padding: 50px 0px 50px 0px;
+  margin: 0 auto;
+  padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 400px;
 }
 
-.footer {
-  background-color: #d1c4e9;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3.5rem;
-}
-.row-footer {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-}
 .jumbotron {
-  padding: 70px 30px 70px 30px;
-  margin: 0px auto;
+  padding: 70px 30px;
+  margin: 0 auto;
   background: #9575cd;
   color: rgb(30, 180, 10);
 }
+
 .jumbotron .new {
   color: #000;
-  padding: 70px 0px 0px 30px;
-}
-address {
-  font-size: 80%;
-  margin: 0px;
-  color: #0f0f0f;
+  padding: 70px 0 0 30px;
 }
 
 .navbar-dark {
@@ -53,11 +85,25 @@ address {
 .col-flag {
   width: 40%;
   margin-top: 5px;
-  justify-content: right;
-  align-items: right;
+  justify-content: flex-end;
+  align-items: center;
   display: flex;
 }
 
+/* --- Elements & Components --- */
+address {
+  font-size: 80%;
+  margin: 0;
+  color: #0f0f0f;
+}
+
+.menu {
+  width: 300px;
+  height: 50%;
+  cursor: pointer;
+}
+
+/* --- Page Transitions --- */
 .page-enter {
   opacity: 0.01;
   transform: translateX(-100%);
@@ -77,8 +123,18 @@ address {
   transform: translateX(100%);
   transition: all 300ms ease-out;
 }
-.menu {
-  width: 300px;
-  height: 50%;
-  cursor: pointer;
+
+/* --- Sticky Footer --- */
+.footer {
+  background-color: #d1c4e9;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: auto; /* ضمان نزول الـ Footer للقاع في كل الحالات */
+}
+
+.row-footer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
