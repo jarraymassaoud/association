@@ -1,4 +1,37 @@
-/* --- Global Reset & Flexbox Root --- */
+/* --- Global Reset & Flexbox Root --- */ /* منع التمرير الأفقي وتجاوز حدود الشاشة في التلفون */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* جعل كافة الصور تتلاءم مع حجم الشاشة تلقائياً */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* تحسين حجم الأزرار والجداول في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  p,
+  li {
+    font-size: 0.95rem !important;
+  }
+}
 html,
 body,
 #root {
