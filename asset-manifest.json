@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/association/static/css/main.af69e33c.css",
-    "main.js": "/association/static/js/main.a3b46d16.js",
-    "static/js/787.07221342.chunk.js": "/association/static/js/787.07221342.chunk.js",
+    "main.css": "/association/static/css/main.3374e0ba.css",
+    "main.js": "/association/static/js/main.fcf03e98.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/association/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Flag_of_Tunisia.gif": "/association/static/media/Flag_of_Tunisia.8c6511ba32db607f57a8.gif",
     "static/media/fontawesome-webfont.eot": "/association/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/association/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/logo-minister.png": "/association/static/media/logo-minister.48bb94f167b101435f3c.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/association/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/atas.png": "/association/static/media/atas.3831004fea54c6f4c59c.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/association/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/association/index.html",
-    "main.af69e33c.css.map": "/association/static/css/main.af69e33c.css.map",
-    "main.a3b46d16.js.map": "/association/static/js/main.a3b46d16.js.map",
-    "787.07221342.chunk.js.map": "/association/static/js/787.07221342.chunk.js.map"
+    "main.3374e0ba.css.map": "/association/static/css/main.3374e0ba.css.map",
+    "main.fcf03e98.js.map": "/association/static/js/main.fcf03e98.js.map"
   },
   "entrypoints": [
-    "static/css/main.af69e33c.css",
-    "static/js/main.a3b46d16.js"
+    "static/css/main.3374e0ba.css",
+    "static/js/main.fcf03e98.js"
   ]
 }
